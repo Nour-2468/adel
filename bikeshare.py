@@ -1,5 +1,5 @@
 import time
-import pand  as pd
+import pands  as pd
 import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -192,4 +192,4 @@ def main():
 
 
 if _name_ == "_main_":
-	main()
+    main()
