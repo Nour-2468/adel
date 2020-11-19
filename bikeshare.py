@@ -1,5 +1,5 @@
 import time
-import pand  as pd
+import pandas  as pd
 import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
@@ -189,7 +189,6 @@ def main():
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
+if __name__ == "__main__":
+    main()
 
-
-if _name_ == "_main_":
-	main()
