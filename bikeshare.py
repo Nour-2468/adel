@@ -1,10 +1,11 @@
 import time
-import pand  as pd
+import pandas as pd
 import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+
 def check_input(input_str,input_type):
     
      """
@@ -31,6 +32,7 @@ def check_input(input_str,input_type):
         except valueError:
             print('sorry Error input')
     return input_read
+
 def get_filtets():
       """
     Asks user to specify a city, month, and day to analyze.
@@ -175,10 +177,16 @@ def user_stats(df,city):
         print('Earliest Year:',earliest_year)
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
+	view_data=input('\nWould you like to view 5 rows of individual trip data?Enter yes or no\n')
+	start_loc=0
+	while(?????):
+		print(df.iloc[????:????])
+		start_loc+=5
+		view_display=input("Do you wish to continue?:").lower()
+	
 def main():
     while True:
-        city, month, day = get_filters()
+        city, month, day = get_filtets()
         df = load_data(city, month, day)
 
         time_stats(df)
@@ -191,5 +199,5 @@ def main():
             break
 
 
-if _name_ == "_main_":
-	main()
+if __name__ == "__main__":
+    main()
