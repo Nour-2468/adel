@@ -1,12 +1,12 @@
 import time
-import pand  as pd
+import pandas as pd
 import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+
 def check_input(input_str,input_type):
-    
      """
     check the validity of user input.
     input_str: is the input of the user
@@ -31,7 +31,8 @@ def check_input(input_str,input_type):
         except valueError:
             print('sorry Error input')
     return input_read
-def get_filtets():
+
+def get_filters():
       """
     Asks user to specify a city, month, and day to analyze.
     Returns:
@@ -192,4 +193,4 @@ def main():
 
 
 if _name_ == "_main_":
-	main()
+    main()
